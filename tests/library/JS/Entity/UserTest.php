@@ -13,7 +13,7 @@ class UserTest
         $this->assertInstanceOf('JS\Entity\User', new User());
     }
 
-    public function testCanSetFirstAndLastNameAndRetrieveThem(){
+    public function testCanSetUserPropertiesAndReceiveThem(){
         $u = new User();
         $u->setFirstName('Jigal');
         $u->setSurname('Sanders');
@@ -43,6 +43,8 @@ class UserTest
         $this->assertEquals('Amsterdam', $users[0]->getPlace());
 
     }
+
+
 
 }
 
