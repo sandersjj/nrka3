@@ -1,17 +1,11 @@
 <?php
 
-class IndexController extends Zend_Controller_Action
+class IndexController extends JS_Controller_Action
 {
 
     public function init()
     {
-        $em =  $this->getDoctrineContainer()->getEntityManager();
-        $tool = new \Doctrine\ORM\Tools\SchemaTool($em);
-        $classes = array(
-        $em->getClassMetadata('JS\Entity\User'),
-        //$em->getClassMetadata('Entities\Profile')
-);
-$tool->createSchema($classes);
+       
     }
 
     public function indexAction()
@@ -28,10 +22,6 @@ $tool->createSchema($classes);
        
     }
 
-    public function getDoctrineContainer()
-    {
-	        return $this->getInvokeArg('bootstrap')->getResource('doctrine');
-    }
 
 
 }

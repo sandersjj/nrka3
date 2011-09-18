@@ -24,17 +24,16 @@ class Event {
     private $name;
 
     /**
-    * @column(type="datetime", nullable=true
+    * @column(type="datetime", nullable=true)
     * var dateTime startDayTime
     */
-
-    private startDayTime;
+    private $startDayTime;
 
     /**
-    * @column(type="datetime", nullable=true
-    * var dateTime startDayTime
+    * @column(type="datetime", nullable=true)
+    * var dateTime endDayTime
     */
-    private endDayTime;
+    private $endDayTime;
 
 
 

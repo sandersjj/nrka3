@@ -51,7 +51,7 @@ class ModelTestCase
         self::dropSchema($this->doctrineContainer->getConnection()->getParams());
 
         $tool = new Doctrine\ORM\Tools\SchemaTool($this->doctrineContainer->getEntityManager());
-        $tool->createSchema($this->getClassMetas(APPLICATION_PATH .'/../library/JS/Entity','JS\Entity\\'));
+        $tool->createSchema($this->getClassMetas(APPLICATION_PATH . '/../library/JS/Entity', 'JS\Entity\\'));
 
         parent::setUp();
     }
