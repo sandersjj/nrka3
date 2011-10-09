@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>library/JS/Entity</title>
+    <title>library/JS/Controller</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--[if IE]><script src="excanvas.compressed.js"></script><![endif]-->
     <script src="RGraph.common.js" ></script>
@@ -12,8 +12,8 @@
 
   <body>
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td class="title">library/JS/Entity</td></tr>
-      <tr><td><div align="center"><p><a href="library_JS_Entity.html">Back to Code Coverage report</a></p></div></td></tr>
+      <tr><td class="title">library/JS/Controller</td></tr>
+      <tr><td><div align="center"><p><a href="library_JS_Controller.html">Back to Code Coverage report</a></p></div></td></tr>
       <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
     </table>
 
@@ -26,7 +26,7 @@
             <h2>Class Coverage Distribution</h2>
             <canvas id="classCoverageDistribution" width="475" height="200"></canvas>
             <script>
-            var ccd = new RGraph.Bar('classCoverageDistribution', [0,0,0,0,0,0,1,0,0,1,0,0]);
+            var ccd = new RGraph.Bar('classCoverageDistribution', [0,1,0,0,0,0,0,0,0,0,0,0]);
             ccd.Set('chart.background.barcolor1', 'white');
             ccd.Set('chart.background.barcolor2', 'white');
             ccd.Set('chart.colors', ['blue']);
@@ -43,7 +43,7 @@
             <h2>Class Complexity</h2>
             <canvas id="classComplexity" width="475" height="200"></canvas>
             <script>
-            var cc = new RGraph.Scatter('classComplexity', [[53.846153846154,8,"blue","Event"],[83.783783783784,24,"blue","User"]]);
+            var cc = new RGraph.Scatter('classComplexity', [[4.7619047619048,7,"blue","JS_Controller_Action"]]);
             cc.Set('chart.xmax', 100);
             cc.Set('chart.background.barcolor1', 'white');
             cc.Set('chart.background.barcolor2', 'white');
@@ -59,6 +59,7 @@
           <td valign="top">
             <h2>Top Project Risks</h2>
             <ul>
+              <li><a href="library_JS_Controller_Action.php.html#8">JS_Controller_Action</a> (49)</li>
 
             </ul>
           </td>
@@ -66,15 +67,10 @@
           <td valign="top">
             <h2>Least Tested Methods</h2>
             <ul>
-              <li><a href="library_JS_Entity_User.php.html#84">User::setId</a> (0%)</li>
-              <li><a href="library_JS_Entity_User.php.html#88">User::getPrefix</a> (0%)</li>
-              <li><a href="library_JS_Entity_User.php.html#92">User::setPrefix</a> (0%)</li>
-              <li><a href="library_JS_Entity_User.php.html#80">User::getId</a> (0%)</li>
-              <li><a href="library_JS_Entity_Event.php.html#63">Event::getEndDateTime</a> (0%)</li>
-              <li><a href="library_JS_Entity_Event.php.html#43">Event::setId</a> (0%)</li>
-              <li><a href="library_JS_Entity_Event.php.html#47">Event::getName</a> (0%)</li>
-              <li><a href="library_JS_Entity_Event.php.html#55">Event::getStartDateTime</a> (0%)</li>
-              <li><a href="library_JS_Entity_Event.php.html#39">Event::getId</a> (0%)</li>
+              <li><a href="library_JS_Controller_Action.php.html#47">JS_Controller_Action::getDoctrineContainer</a> (0%)</li>
+              <li><a href="library_JS_Controller_Action.php.html#31">JS_Controller_Action::getClassMetas</a> (0%)</li>
+              <li><a href="library_JS_Controller_Action.php.html#21">JS_Controller_Action::initDoctrine</a> (0%)</li>
+              <li><a href="library_JS_Controller_Action.php.html#15">JS_Controller_Action::init</a> (0%)</li>
 
             </ul>
           </td>

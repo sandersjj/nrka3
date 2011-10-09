@@ -27,14 +27,46 @@ class Event {
     * @column(type="datetime", nullable=true)
     * var dateTime startDayTime
     */
-    private $startDayTime;
+    private $startDateTime;
 
     /**
     * @column(type="datetime", nullable=true)
     * var dateTime endDayTime
     */
-    private $endDayTime;
+    private $endDateTime;
 
+
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($id) {
+        $this->id = $id;
+    }
+
+    public function getName() {
+        return $this->name;
+    }
+
+    public function setName($name) {
+        $this->name = $name;
+    }
+
+    public function getStartDateTime() {
+        return $this->startDateTime;
+    }
+
+    public function setStartDateTime($startDateTime) {
+        $this->startDateTime = $startDateTime;
+    }
+
+    public function getEndDateTime() {
+        return $this->endDateTime;
+    }
+
+    public function setEndDateTime($endDateTime) {
+        $this->endDateTime = $endDateTime;
+    }
 
 
 
